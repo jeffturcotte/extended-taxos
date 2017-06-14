@@ -9,12 +9,16 @@
 			"homepage": "https://johnblackbourn.com/"
 		}
 	],
-	"repositories":[
+	"repositories": [
 		{
 			"type": "composer",
 			"url" : "http://wpackagist.org"
 		}
 	],
+	"autooad": {
+		"files": ["src/functions.php"],
+		"psr-0": { "": "src/" }
+	},
 	"require": {
 		"johnbillion/extended-cpts": "~3.0",
 		"php": ">=5.4",
